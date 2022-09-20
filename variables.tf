@@ -22,6 +22,13 @@ variable "MD_STORAGE_ACCOUNT_HNS_ENABLED" {
     default     = false
   }
 
+variable "MD_STORAGE_ACCOUNT_LARGEFS_ENABLED" {
+    description = "enable Large File Share"
+    type        = bool
+    default     = false
+  }
+
+
  variable "MD_STORAGE_ACCOUNT_MIN_TLS" {
     description = "Minimum version of TLS"
     type        = string

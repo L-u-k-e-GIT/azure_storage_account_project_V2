@@ -8,7 +8,7 @@ resource "azurerm_storage_account" "st_data" {
     account_replication_type    = var.MD_STORAGE_ACCOUNT_REPLICATION_TYPE
     access_tier                 = var.MD_STORAGE_ACCOUNT_ACCESS_TIER 
     is_hns_enabled              = var.MD_STORAGE_ACCOUNT_HNS_ENABLED
-    large_file_share_enabled    = var.MD_STORAGE_ACCOUNT_LARGEFS_ENABLED
+    large_file_share_enabled    = var.MD_STORAGE_ACCOUNT_FS_LARGEFILESHARE 
     min_tls_version             = var.MD_STORAGE_ACCOUNT_MIN_TLS
     allow_nested_items_to_be_public  = false
     tags = var.MD_ALL_TAGS

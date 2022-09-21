@@ -29,9 +29,10 @@ resource "azurerm_storage_account" "st_data" {
 
     }
 
-    lifecycle {
+   lifecycle {
     ignore_changes = [
-     tags
+     tags,
+     azure_files_authentication [""] #avoid changes on active directory configuration
     ]
   }
 }

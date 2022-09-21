@@ -22,7 +22,7 @@ variable "MD_STORAGE_ACCOUNT_HNS_ENABLED" {
     default     = false
   }
 
-variable "MD_STORAGE_ACCOUNT_LARGEFS_ENABLED" {
+variable "MD_STORAGE_ACCOUNT_FS_LARGEFILESHARE " {
     description = "enable Large File Share"
     type        = bool
     default     = false
